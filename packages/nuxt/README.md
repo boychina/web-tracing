@@ -1,19 +1,19 @@
-# @web-tracing/nuxt
+# web-tracing-nuxt
 
 基于 JS 跨平台插件，为 Nuxt3 项目提供【 埋点、行为、性能、异常、请求、资源、路由、曝光、录屏 】监控手段
 
 ## 安装
 
 ```bash
-pnpm install @web-tracing/nuxt
+pnpm install web-tracing-nuxt
 # 或者
-npm install @web-tracing/nuxt
+npm install web-tracing-nuxt
 # 或者
-yarn add @web-tracing/nuxt
+yarn add web-tracing-nuxt
 ```
 
 ::: tip
-`@web-tracing/nuxt` 依赖 `@web-tracing/core`，安装时会自动安装。用户只需要安装 `@web-tracing/nuxt` 即可。
+`web-tracing-nuxt` 依赖 `web-tracing-core`，安装时会自动安装。用户只需要安装 `web-tracing-nuxt` 即可。
 :::
 
 ## 使用
@@ -23,7 +23,7 @@ yarn add @web-tracing/nuxt
 ```typescript
 export default defineNuxtConfig({
   modules: [
-    '@web-tracing/nuxt'
+    'web-tracing-nuxt'
   ],
 
   webTracing: {
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
 
 ### 2. 在组件中使用
 
-在 Vue 组件中需要从 `@web-tracing/core` 导入 API：
+在 Vue 组件中需要从 `web-tracing-core` 导入 API：
 
 ```vue
 <template>
@@ -61,7 +61,7 @@ export default defineNuxtConfig({
 </template>
 
 <script setup lang="ts">
-import { traceError, options } from '@web-tracing/core'
+import { traceError, options } from 'web-tracing-core'
 
 // 手动触发埋点
 const trackClick = () => {
@@ -86,12 +86,12 @@ options.value.recordScreen = true
 ```
 
 ::: warning 注意
-不要在 Vue 组件中直接从 `@web-tracing/nuxt` 导入，因为 `@web-tracing/nuxt` 是一个 Nuxt 模块，包含 `defineNuxtModule`，不能在 Vue 组件中直接导入。请始终从 `@web-tracing/core` 导入功能 API。
+不要在 Vue 组件中直接从 `web-tracing-nuxt` 导入，因为 `web-tracing-nuxt` 是一个 Nuxt 模块，包含 `defineNuxtModule`，不能在 Vue 组件中直接导入。请始终从 `web-tracing-core` 导入功能 API。
 :::
 
 ## 配置选项
 
-所有配置选项与 `@web-tracing/core` 相同：
+所有配置选项与 `web-tracing-core` 相同：
 
 | 属性 | 类型 | 默认值 | 说明 |
 |------|------|--------|------|
@@ -119,7 +119,7 @@ options.value.recordScreen = true
 
 ## 可用 API
 
-在 Vue 组件中可以从 `@web-tracing/core` 导入以下 API：
+在 Vue 组件中可以从 `web-tracing-core` 导入以下 API：
 
 - `traceError` - 手动上报错误
 - `options` - 动态修改配置
@@ -128,7 +128,7 @@ options.value.recordScreen = true
 - `intersectionDisconnect` - 取消所有曝光采集
 - `unzipRecordscreen` - 解压录屏数据
 - `afterSendData` - 数据发送后的回调
-- 以及其他 `@web-tracing/core` 提供的所有 API
+- 以及其他 `web-tracing-core` 提供的所有 API
 
 ## 功能特性
 

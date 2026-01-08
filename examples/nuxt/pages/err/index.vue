@@ -220,7 +220,7 @@
 </template>
 
 <script lang="ts" setup>
-import { traceError, unzipRecordscreen, options } from '@web-tracing/core'
+import { traceError, unzipRecordscreen, options } from 'web-tracing-core'
 import { ref, reactive, onMounted, inject, nextTick } from 'vue'
 
 const formatDate = inject('formatDate', Function, true)

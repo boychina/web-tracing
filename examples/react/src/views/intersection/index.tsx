@@ -5,7 +5,7 @@ import {
   intersectionObserver,
   intersectionUnobserve,
   intersectionDisconnect
-} from '@web-tracing/react'
+} from 'web-tracing-react'
 import CTable from '../../components/CTable'
 import { formatDate } from '../../utils/tools'
 

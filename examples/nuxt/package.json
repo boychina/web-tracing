@@ -13,8 +13,8 @@
     "init": "cd ../.. && pnpm run build"
   },
   "dependencies": {
-    "@web-tracing/core": "workspace:*",
-    "@web-tracing/nuxt": "workspace:*",
+    "web-tracing-core": "workspace:*",
+    "web-tracing-nuxt": "workspace:*",
     "@vueuse/core": "9.13.0",
     "@vueuse/shared": "9.13.0",
     "axios": "^1.4.0",

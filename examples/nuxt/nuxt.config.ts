@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     '/': { redirect: '/home' }
   },
 
-  modules: ['@element-plus/nuxt', '@web-tracing/nuxt'],
+  modules: ['@element-plus/nuxt', 'web-tracing-nuxt'],
 
   webTracing: {
     dsn: '/trackweb',

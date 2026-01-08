@@ -1,6 +1,6 @@
 import { addPluginTemplate, defineNuxtModule } from '@nuxt/kit'
-import * as WebTracingCore from '@web-tracing/core'
-import type { InitOptions } from '@web-tracing/core'
+import * as WebTracingCore from "web-tracing-core";
+import type { InitOptions } from "web-tracing-core";
 
 // Polyfill requestAnimationFrame for SSR
 if (typeof global !== 'undefined' && !global.requestAnimationFrame) {
@@ -40,31 +40,31 @@ function toJS(value: any): string {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@web-tracing/nuxt',
-    configKey: 'webTracing'
+    name: "web-tracing-nuxt",
+    configKey: "webTracing",
   },
   defaults: {} as ModuleOptions,
   setup(options: ModuleOptions, nuxt: any) {
     addPluginTemplate({
-      filename: 'web-tracing.client.ts',
+      filename: "web-tracing.client.ts",
       getContents: () => {
         return [
           'import { defineNuxtPlugin } from "#app";',
-          'import { init } from "@web-tracing/core";',
-          '',
+          'import { init } from "web-tracing-core";',
+          "",
           `const options = ${toJS(options)};`,
-          '',
-          'export default defineNuxtPlugin(() => {',
-          '  init(options);',
-          '});',
-          ''
-        ].join('\n')
-      }
-    })
-  }
-}) as any
+          "",
+          "export default defineNuxtPlugin(() => {",
+          "  init(options);",
+          "});",
+          "",
+        ].join("\n");
+      },
+    });
+  },
+}) as any;
 
-export * from '@web-tracing/core'
+export * from "web-tracing-core";
 
 export const init = WebTracingCore.init
 export const destroyTracing = WebTracingCore.destroyTracing

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { destroyTracing, init } from '@web-tracing/vue2'
+import { destroyTracing, init } from 'web-tracing-vue2'
 import { webTracingConfig } from '../../main.js'
 
 export default {

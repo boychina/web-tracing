@@ -21,7 +21,7 @@
 import { ref, provide, onMounted } from 'vue'
 import { ElMessage, ElMessageBox, ElNotification } from 'element-plus'
 import { dynamicRouterMap } from './router/dynamic'
-import { afterSendData } from '@web-tracing/core'
+import { afterSendData } from 'web-tracing-core'
 
 const items = ref<any[]>(dynamicRouterMap.filter(item => item.path !== '/'))
 const baseInfo = ref<any>({})

@@ -11,7 +11,7 @@
 
 此项目由 [web-tracing -> examples -> react](https://github.com/M-cheng-web/web-tracing/tree/main/examples/react) 通过脚本直接覆盖迁移过来的，目的是为了拟真测试，本地联调还是在 [web-tracing](https://github.com/M-cheng-web/web-tracing) 项目中完成的
 
-因为是直接迁移过来的代码，所以本地更新时需要修改package.json中的 "@web-tracing/react" 为 "latest"
+因为是直接迁移过来的代码，所以本地更新时需要修改package.json中的 "web-tracing-react" 为 "latest"
 
 ## 运行
 ```

@@ -13,8 +13,8 @@
     "skipLibCheck": true,
     "noEmit": true,
     "paths": {
-      "@web-tracing/core": ["../../packages/core/index.ts"],
-      "@web-tracing/core/*": ["../../packages/core/*"],
+      "web-tracing-core": ["../../packages/core/index.ts"],
+      "web-tracing-core/*": ["../../packages/core/*"],
       // "@web-tracing/component": ["./packages/component/index.ts"],
     },
     "types": [

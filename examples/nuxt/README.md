@@ -1,6 +1,6 @@
 # Web-Tracing Nuxt3 示例
 
-这是一个基于 Nuxt3 框架的 web-tracing 埋点监控示例项目，展示了如何使用 @web-tracing/core SDK 进行前端监控。
+这是一个基于 Nuxt3 框架的 web-tracing 埋点监控示例项目，展示了如何使用 web-tracing-core SDK 进行前端监控。
 
 ## 快速开始
 
@@ -121,7 +121,7 @@ runtimeConfig: {
 在页面中导入并使用 SDK：
 
 ```typescript
-import { traceError, options } from '@web-tracing/core'
+import { traceError, options } from 'web-tracing-core'
 
 // 手动上报错误
 traceError({
@@ -156,7 +156,7 @@ options.value.recordScreen = true
 
 ## 注意事项
 
-1. 确保 `@web-tracing/core` 包已正确构建
+1. 确保 `web-tracing-core` 包已正确构建
 2. 后端服务运行在 3001 端口
 3. 前端服务运行在 3000 端口
 4. 使用 `$fetch` 进行 API 请求

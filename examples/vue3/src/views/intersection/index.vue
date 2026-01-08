@@ -87,7 +87,7 @@ import {
   intersectionObserver,
   intersectionUnobserve,
   intersectionDisconnect
-} from '@web-tracing/vue3'
+} from 'web-tracing-vue3'
 import { ref, onMounted, inject } from 'vue'
 
 const formatDate = inject('formatDate', Function, true)

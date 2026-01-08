@@ -62,7 +62,7 @@
 
 <script>
 import axios from 'axios'
-import { options } from '@web-tracing/vue2'
+import { options } from 'web-tracing-vue2'
 
 export default {
   name: 'app.vue',

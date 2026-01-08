@@ -4,7 +4,7 @@ import type { TabsProps } from 'antd'
 import axios from 'axios'
 import rrwebPlayer from 'rrweb-player'
 import 'rrweb-player/dist/style.css'
-import { traceError, options, unzipRecordscreen } from '@web-tracing/react'
+import { traceError, options, unzipRecordscreen } from 'web-tracing-react'
 import CTable from '../../components/CTable'
 import { formatDate } from '../../utils/tools'
 

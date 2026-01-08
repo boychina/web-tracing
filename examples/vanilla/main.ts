@@ -6,8 +6,8 @@ import {
   setUserUuid,
   getBaseInfo,
   getFirstScreen,
-  getIPs
-} from '@web-tracing/core'
+  getIPs,
+} from "web-tracing-core";
 
 start()
 

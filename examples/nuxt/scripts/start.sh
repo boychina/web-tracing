@@ -14,7 +14,7 @@ echo "步骤 1: 安装项目依赖..."
 pnpm install
 
 echo ""
-echo "步骤 2: 构建 @web-tracing/core 包..."
+echo "步骤 2: 构建 web-tracing-core 包..."
 pnpm run build
 
 echo ""

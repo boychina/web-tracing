@@ -225,7 +225,7 @@
 
 <script lang="ts" setup>
 import axios from 'axios'
-import { traceError, unzipRecordscreen, options } from '@web-tracing/vue3'
+import { traceError, unzipRecordscreen, options } from 'web-tracing-vue3'
 import rrwebPlayer from 'rrweb-player'
 import 'rrweb-player/dist/style.css'
 import { ref, reactive, onMounted, inject, nextTick } from 'vue'

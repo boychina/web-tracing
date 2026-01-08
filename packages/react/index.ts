@@ -5,10 +5,10 @@ import {
   ReactNode,
   createElement
 } from 'react'
-import type { InitOptions } from '@web-tracing/core'
-import * as WebTracingCore from '@web-tracing/core'
+import type { InitOptions } from "web-tracing-core";
+import * as WebTracingCore from "web-tracing-core";
 
-export type { InitOptions } from '@web-tracing/core'
+export type { InitOptions } from "web-tracing-core";
 
 export const init = WebTracingCore.init
 export const destroyTracing = WebTracingCore.destroyTracing

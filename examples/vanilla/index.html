@@ -367,7 +367,7 @@
       <button onclick="delayInit()">延迟加载sdk</button>
     </div>
     <script type="module">
-      import { init } from "@web-tracing/core";
+        import { init } from "web-tracing-core";
       window.delayInit = function () {
         init({
           // dsn: 'https://cdn.staticaly.com/gh/M-cheng-web/image-provider@main/blog/Annapurna-Ranges-2560x1440.5r9m9t5vg1g0.webp',
@@ -392,7 +392,7 @@
       <button onclick="sendLocal()">点击发送</button>
     </div>
     <script type="module">
-      import { sendLocal, setLocalizationOverFlow } from "@web-tracing/core";
+        import { sendLocal, setLocalizationOverFlow } from "web-tracing-core";
       window.setLocalizationOverFlow = function () {
         setLocalizationOverFlow((data) => {
           console.log(
@@ -434,7 +434,7 @@
         intersectionObserver,
         intersectionUnobserve,
         intersectionDisconnect,
-      } from "@web-tracing/core";
+        } from "web-tracing-core";
       window.intersectionObserver = function (str) {
         const target = document.querySelector(`#${str}`);
         intersectionObserver({
